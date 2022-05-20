@@ -18,6 +18,7 @@ main{
     height: auto;
     padding: 3vh;
     border-radius: 14px;
+    box-shadow: 0 1em 2em 0;
 }
 
 .image-wrapper {
