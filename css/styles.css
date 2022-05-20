@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600&display=swap');
+
+body {
+    background: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+main{
+    margin: 0;
+    padding: 90px 0;
+}
+.box {
+    background: hsl(216, 50%, 16%);
+    margin: auto;
+    width: 30%;
+    height: auto;
+    padding: 3vh;
+    border-radius: 14px;
+}
+
+.image-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 14px;
+}
+.image-wrapper > img {
+    display: block;
+    border-radius: 14px;
+    max-width: 100%;
+    height:auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content {
+    position: absolute;
+    inset: 0;
+    font-size: 2rem;
+    background: hsl(178, 100%, 50%, .4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-wrapper > img, .content {
+    transition: 200ms ease-in-out;
+}
+
+.content.fade {
+    opacity: 0;
+}
+
+.content.fade:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+h2:hover {
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+.coin-duration {
+    display: flex;
+    justify-content: space-between;
+}
+.user {
+    display: flex;
+    justify-content: flex-start;
+}
+.username{
+    margin: auto 10px;
+    color:hsl(215, 32%, 27%)
+
+}
+.username > span {
+    color: hsl(0, 0%, 100%);
+}
+
+.username > span:hover {
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+.user > img {
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 30px;
+}
+p {
+    font-size: 20px;
+    color: hsl(215, 32%, 27%);
+}
+.expire {
+    color: hsl(215, 32%, 27%);
+}
+h2{
+    color: hsl(0, 0%, 100%);
+    
+
+}
+.coin {
+    display: flex;
+    justify-content: flex-start;
+    font-weight: 600;
+    color: hsl(178, 100%, 50%);
+}
+.coin > img, .clock > img {
+    margin: auto 7px;
+}
+
+.clock {
+        display: flex;
+        justify-content: flex-start;
+        font-weight: 600;
+}
+
+hr {
+    color: hsl(215, 32%, 27%);
+    margin: 20px 0;
+}
+
+@media only screen and (max-width: 600px) {
+    main{
+        margin: 0;
+        padding: 90px 0;
+    }
+    .box {
+        background: hsl(216, 50%, 16%);
+        margin: auto;
+        width: 80%;
+        height: auto;
+        padding: 2vh;
+        border-radius: 14px;
+    }
+    
+  }
